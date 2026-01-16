@@ -27,7 +27,3 @@ All resources are indexed from the www, our mission is to share the great bootst
 
 * https://bootstrap4.cc
 
-## Copyright and License
-
-Copyright 2019 colorlib. Code released under the Creative Common 3.0 license.
-All footer credits must remain in place.
