@@ -1,4 +1,6 @@
- AOS.init({
+console.log("Day 2: Financial Advisor website loaded");
+
+AOS.init({
  	duration: 800,
  	easing: 'slide',
  	once: true
@@ -334,3 +336,20 @@ jQuery(document).ready(function($) {
 	});
 
 });
+  
+  document.getElementById("button-addon2")?.addEventListener("click", function () {
+  alert("Thank you for contacting Pradeep Financial Advisory");
+});
+ 
+  document.getElementById("contactForm")
+  ?.addEventListener("submit", function (event) {
+    
+    // STOP page reload
+    event.preventDefault();
+
+    // Show popup
+    alert("Thank you for contacting Pradeep Financial Advisory");
+
+    // clear form this.reset();
+    
+  });
