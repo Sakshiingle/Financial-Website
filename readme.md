@@ -1,29 +1,50 @@
-# Finance
-Financial consulting website template
+# Prachoday Finserv – Financial Advisor Website
 
-[Finance](https://bootstrap4.cc/theme/finances/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by colorlib, shared by [bootstrap4.cc](https://bootstrap4.cc) .
+A responsive financial advisory website built using HTML, CSS, and basic JavaScript.  
+This project is customized from a Bootstrap template and deployed using GitHub Pages.
 
-## Preview
+## 🔗 Live Website
+https://sakshiingle.github.io/Financial-Website/
 
-[![Finance Preview](https://bootstrap4.cc/wp-content/uploads/2019/06/finance.png)](https://bootstrap4.cc/theme/finances/)
+## 📌 Project Overview
+This website represents a financial advisory business.  
+It includes a hero slider,Home section, service sections, about section, and a contact form, and Financial calculators.
 
-**[View Live Preview](https://bootstrap4.cc/theme/finances)**
+The goal of this project was to practice:
+- Frontend fundamentals
+- Responsive design
+- Basic JavaScript (DOM & events)
+- Git and GitHub workflow
+- Website deployment
 
-## Download and Installation
+## 🛠️ Technologies Used
+- HTML5 – page structure
+- CSS3 – styling and responsiveness
+- JavaScript – basic DOM manipulation and events
+- Bootstrap 4 – layout and components
+- Git & GitHub – version control
+- GitHub Pages – deployment
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release](https://bootstrap4.cc/theme/finances/)
+## ✨ Features
+- Responsive layout (desktop & mobile)
+- Sticky header with mobile hamburger menu
+- Hero section with slider
+- Services and About sections
+- Contact form with JavaScript alert and js calculator logic.
+- Clean UI suitable for a financial website
 
-## Usage
+## 📚 What I Learned
+- How HTML, CSS, and JavaScript work together
+- Fixing mobile responsiveness issues
+- Understanding DOM and event handling
+- Using Git commands: add, commit, push
+- Deploying a static website using GitHub Pages
+- Customizing an existing template properly
 
-### Basic Usage
+## 🚀 How to Run Locally
+1. Clone the repository
+2. Open `index.html` in a browser
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-## About
-
-bootstrap4.cc is an open source Bootstrap templates and themes library.
-All resources are indexed from the www, our mission is to share the great bootstrap 4 resources to all frontend developers.
-
-* https://bootstrap4.cc
-
+## ⚠️ Credits
+This project is customized from a Bootstrap template originally provided by Colorlib.  
+All modifications, styling changes, content updates, logic added and deployment were done by me for learning purposes.

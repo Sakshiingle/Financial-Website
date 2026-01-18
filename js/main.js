@@ -410,3 +410,16 @@ function calculateSIP() {
         }
     }
 }
+  /* =========================================
+             Reset Button Logic
+   ========================================= */
+function resetSIP() {
+    // 1. Find the form and tell it to clear all input boxes
+    document.getElementById('sipForm').reset();
+
+    // 2. Find the result box and hide it again (Cloaking device ON!)
+    var resultBox = document.getElementById('result-box');
+    if (resultBox) {
+        resultBox.style.display = 'none';
+    }
+}
