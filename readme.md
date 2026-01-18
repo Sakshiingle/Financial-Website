@@ -20,8 +20,9 @@ The goal of this project was to practice:
 ## 🛠️ Technologies Used
 - HTML5 – page structure
 - CSS3 – styling and responsiveness
-- JavaScript – basic DOM manipulation and events
-- Bootstrap 4 – layout and components
+- JavaScript (ES6) – basic DOM manipulation , events and Financial Calculator logic .
+- Bootstrap 4 – To ensure a mobile-first, responsive grid system.
+- jQuery - Used for smooth scrolling, carousels, and UI interactions.
 - Git & GitHub – version control
 - GitHub Pages – deployment
 
@@ -32,6 +33,7 @@ The goal of this project was to practice:
 - Services and About sections
 - Contact form with JavaScript alert and js calculator logic.
 - Clean UI suitable for a financial website
+- Blog/Article Template : A dedicated single.html layout for deep-dive financial advice.
 
 ## 📚 What I Learned
 - How HTML, CSS, and JavaScript work together
