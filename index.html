@@ -792,9 +792,77 @@
         
       </div>
     </section>
+
+     <!-- SIP Calculator Section-->
+    <section class="site-section bg-light" id="calculator-section">
+      <div class="container">
+        
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up">SIP Calculator</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Plan your financial future. Calculate how your small monthly investments can grow over time.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="p-5 bg-white border rounded">
+              
+              <form id="sipForm" onsubmit="event.preventDefault(); calculateSIP();">
+                
+                <div class="row form-group">
+                  <div class="col-md-12 mb-3 mb-md-0">
+                    <label class="text-black" for="amount">Monthly Investment (₹)</label>
+                    <input type="number" id="amount" class="form-control" placeholder="e.g. 5000" required>
+                  </div>
+                </div>
+
+                <div class="row form-group">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="years">Time Period (Years)</label>
+                    <input type="number" id="years" class="form-control" placeholder="e.g. 10" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="text-black" for="rate">Expected Return Rate (%)</label>
+                    <input type="number" id="rate" class="form-control" placeholder="e.g. 12" value="12" required>
+                  </div>
+                </div>
+
+                <div class="row form-group mt-4">
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-md text-white px-5">Calculate Returns</button>
+                  </div>
+                </div>
+
+              </form>
+
+              <div id="result-box" class="mt-4 p-4 bg-light rounded text-center" style="display: none; border: 1px dashed #ccc;">
+                <h4 class="h5 text-black">Estimated Returns</h4>
+                <div class="row mt-3">
+                  <div class="col-md-4">
+                    <small class="text-uppercase text-muted">Invested Amount</small>
+                    <p class="h5 text-black" id="investedAmount">₹0</p>
+                  </div>
+                  <div class="col-md-4">
+                    <small class="text-uppercase text-muted">Est. Returns</small>
+                    <p class="h5 text-success" id="estReturns">₹0</p>
+                  </div>
+                  <div class="col-md-4">
+                    <small class="text-uppercase text-muted">Total Value</small>
+                    <p class="h4 text-primary font-weight-bold" id="totalValue">₹0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   
-    
-    
 
     <section class="site-section" id="blog-section">
       <div class="container">

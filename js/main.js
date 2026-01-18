@@ -353,3 +353,60 @@ jQuery(document).ready(function($) {
     // clear form this.reset();
     
   });
+  
+   /* =========================================
+            SIP Calculator Logic
+   ========================================= */
+function calculateSIP() {
+    // 1. Get input values by ID
+    var monthlyInvestment = document.getElementById('amount').value;
+    var years = document.getElementById('years').value;
+    var rateOfInterest = document.getElementById('rate').value;
+
+    // 2. Validate that fields are not empty
+    if(monthlyInvestment === "" || years === "" || rateOfInterest === "") {
+      alert("Please fill in all fields (Amount, Years, and Rate)");
+      return;
+    }
+
+    // 3. Convert input to numbers
+    var P = parseFloat(monthlyInvestment);
+    var n = parseFloat(years) * 12; // Total months
+    var i = parseFloat(rateOfInterest) / 12 / 100; // Monthly interest rate
+
+    // 4. SIP Formula: M = P × ({[1 + i]^n - 1} / i) × (1 + i)
+    // P = Monthly Investment
+    // i = Monthly Interest Rate
+    // n = Number of months
+    
+    var totalValue = P * (Math.pow(1 + i, n) - 1) / i * (1 + i);
+    var investedAmount = P * n;
+    var estReturns = totalValue - investedAmount;
+
+    // 5. Format numbers to currency (Indian Rupee)
+    var formatter = new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0
+    });
+
+    // 6. Update the HTML results
+    // Check if result elements exist to avoid errors
+    if(document.getElementById('investedAmount')) {
+        document.getElementById('investedAmount').innerHTML = formatter.format(investedAmount);
+        document.getElementById('estReturns').innerHTML = formatter.format(estReturns);
+        document.getElementById('totalValue').innerHTML = formatter.format(totalValue);
+        
+        // Show the result box
+        var resultBox = document.getElementById('result-box');
+        if(resultBox) {
+            resultBox.style.display = 'block';
+        }
+    } else {
+        // Fallback for the simpler HTML version
+        var resultText = document.getElementById('result');
+        if(resultText) {
+            resultText.innerHTML = "Total Value: " + formatter.format(totalValue);
+        }
+    }
+}
