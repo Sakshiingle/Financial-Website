@@ -2101,7 +2101,6 @@ figure figcaption {
   /* Logo RIGHT */
   .site-logo {
     order: 2;
-    margin: 5px;
     text-align: right;
     align-self: center;
   }
@@ -2110,6 +2109,7 @@ figure figcaption {
     font-size: 14px;
     font-weight: 550;
     color: #fff !important;
+    align-self: center;
   }
 
   /* Prevent Bootstrap stacking */
@@ -2179,7 +2179,3 @@ figure figcaption {
     display: inline-block; /* Makes it sit on the same line as the text */
     margin-top: 5px;
 }
-
-
-
-
