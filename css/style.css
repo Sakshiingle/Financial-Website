@@ -254,7 +254,8 @@ body:after {
   .site-navbar .site-logo {
     position: relative;
     left: 0;
-    top: -5px; }
+    top: -2px;
+     }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
@@ -274,8 +275,8 @@ body:after {
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #007bff; }
       .site-navbar .site-navigation .site-menu > li.social > a {
-        padding-left: 5px;
-        padding-right: 5px; }
+        padding-left: 10px;
+        padding-right: 10px; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -2092,7 +2093,7 @@ figure figcaption {
   /* Logo RIGHT */
   .site-logo {
     order: 2;
-    margin: 0;
+    margin: 5px;
     text-align: right;
   }
 
@@ -2155,6 +2156,19 @@ figure figcaption {
   body {
     padding-top: 70px;
   }
+  
+}
+
+ 
+  /* ===============================
+     --- CUSTOM HEADER FIXES --- 
+  ================================ */
+
+.header-logo-img {
+    height: 60px;       /* Sets the height of your logo so it fits in the bar */
+    width: 70px;        /* Keeps the logo from looking stretched */
+    display: inline-block; /* Makes it sit on the same line as the text */
+    margin-top: 5px;
 }
 
 
