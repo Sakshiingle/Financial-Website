@@ -2066,9 +2066,9 @@ figure figcaption {
 
   .header-logo-img {
     height: 10px;       
-    width: 5px;        
+    width: 10px;        
     display: inline-block; 
-    margin-top: 0 px;
+    margin-left: 10px;
 }
 
   /* Navbar container */
@@ -2101,13 +2101,13 @@ figure figcaption {
   /* Logo RIGHT */
   .site-logo {
     order: 2;
-    text-align: right;
+    text-align: center;
     align-self: center;
   }
 
   .site-logo a {
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 700;
     color: #fff !important;
     align-self: center;
   }
