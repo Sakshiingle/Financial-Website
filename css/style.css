@@ -2125,355 +2125,76 @@ figure figcaption {
     margin-top: 5px;
 }
 
-/* ========================================
-   FINAL RESPONSIVE FOOTER - ALL DEVICES
-   ======================================== */
-
-.site-footer {
-  background: linear-gradient(135deg, #343a40 0%, #23272b 100%);
+   .site-footer {
+  padding: 4em 0;
+  background: #343a40;
+}
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 8em 0;
+  }
+}
+.site-footer .border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.site-footer p {
+  color: rgba(255, 255, 255);
+}
+.site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
   color: #fff;
-  padding: 3rem 0 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
-
-.site-footer .container {
-  max-width: 1200px;
+.site-footer a {
+  color: rgba(255, 255, 255);
+  text-decoration: underline;
 }
-
-/* Logo */
-.footer-logo {
-  width: 160px;
-  height: auto;
-  transition: transform 0.2s;
+.site-footer a:hover {
+  color: white;
 }
-.footer-logo:hover {
-  transform: scale(1.02);
+.site-footer ul li {
+  margin-bottom: 10px;
 }
-.footer-tagline {
-  color: #ddd;
-  font-size: 15px;
-  line-height: 1.5;
-}
-.footer-tagline small {
-  color: #bbb;
-  font-size: 13px;
-}
-
-/* Headings */
-.footer-heading {
+.site-footer .footer-heading {
   font-size: 16px;
-  font-weight: 600;
   color: #fff;
-  margin-bottom: 1.25rem;
-  letter-spacing: 0.5px;
 }
 
-/* Links & Contact */
-.footer-links a,
-.footer-phone,
-.footer-email {
-  color: #ddd !important;
+.footer-social a {
   text-decoration: none !important;
-  font-size: 14px;
-  display: block;
-  padding: 0.25rem 0;
-  transition: all 0.2s;
-}
-.footer-links a:hover,
-.footer-phone:hover,
-.footer-email:hover {
-  color: #fff !important;
-  padding-left: 8px;
-}
-
-/* Newsletter */
-.newsletter-text {
-  color: #ccc;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.footer-subscribe .input-group {
-  border-radius: 50px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  background: #fff;
 }
 
 .footer-subscribe .form-control {
-  border: none !important;
-  height: 48px;
-  padding: 0 20px;
-  font-size: 14px;
-  border-radius: 50px 0 0 50px !important;
+  border-color: #fff !important;
 }
-.footer-subscribe .form-control::placeholder {
-  color: #999;
+.footer-subscribe .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  font-style: italic;
 }
-
-.footer-subscribe .btn-newsletter {
-  background: #007bff !important;
-  border: none !important;
-  color: #fff !important;
-  height: 48px;
-  padding: 0 24px;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 0 50px 50px 0 !important;
-  min-width: 85px;
-  transition: all 0.2s;
+.footer-subscribe .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  font-style: italic;
 }
-.footer-subscribe .btn-newsletter:hover {
-  background: #0056b3 !important;
-  transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+.footer-subscribe .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  font-style: italic;
+}
+.footer-subscribe .form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+  font-style: italic;
 }
 
-/* Divider */
-.footer-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 400px;
+.footer-subscribe .btn {
+  height: 43px;
+  line-height: 1;
+  border: 1px solid #fff;
+  background: #fff !important;
+  color: #000 !important;
 }
-
-/* Bottom text */
-.footer-bottom {
-  text-align: center;
-}
-.copyright {
-  color: #ccc;
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.4;
-}
-.risks {
-  color: #bbb;
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0.5rem 0;
-}
-.designer {
-  color: #aaa;
-  font-size: 12px;
-  margin: 0;
-}
-.designer a {
-  color: #ccc !important;
-  text-decoration: none !important;
-}
-.designer a:hover {
-  color: #007bff !important;
-}
-
-/* ========================================
-   RESPONSIVE BREAKPOINTS
-   ======================================== */
-
-/* Mobile < 576px */
-@media (max-width: 575.98px) {
-  .site-footer {
-    padding: 2rem 0 1.5rem !important;
-  }
-  .site-footer .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  .footer-logo {
-    width: 130px !important;
-  }
-  .footer-tagline {
-    font-size: 14px !important;
-  }
-  .footer-heading {
-    font-size: 15px !important;
-    margin-bottom: 1rem !important;
-  }
-  .footer-links,
-  .footer-contact {
-    margin-bottom: 1.5rem;
-  }
-  .footer-subscribe .form-control,
-  .footer-subscribe .btn-newsletter {
-    height: 44px !important;
-  }
-  .footer-subscribe .btn-newsletter {
-    min-width: 75px !important;
-    padding: 0 18px !important;
-    font-size: 13px !important;
-  }
-  .copyright {
-    font-size: 13px !important;
-  }
-  .risks {
-    font-size: 11px !important;
-  }
-  .designer {
-    font-size: 11px !important;
-  }
-}
-
-/* Tablet 576px - 991px */
-@media (min-width: 576px) and (max-width: 991.98px) {
-  .site-footer {
-    padding: 2.5rem 0 2rem !important;
-  }
-  .footer-logo {
-    width: 150px !important;
-  }
-  .footer-subscribe .form-control,
-  .footer-subscribe .btn-newsletter {
-    height: 46px !important;
-  }
-}
-
-/* Desktop > 992px */
-@media (min-width: 992px) {
-  .site-footer {
-    padding: 4rem 0 3rem !important;
-  }
-  .footer-logo {
-    width: 170px !important;
-  }
-  .footer-subscribe .form-control,
-  .footer-subscribe .btn-newsletter {
-    height: 50px !important;
-  }
-  .footer-subscribe .btn-newsletter {
-    min-width: 95px !important;
-  }
-}
-
-/* Ultra-wide */
-@media (min-width: 1400px) {
-  .site-footer .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-    /* ====================================
-   MOBILE RESPONSIVE - FULL SITE FIX
-   ==================================== */
-
-/* 1. HERO TEXT - Prevent overflow */
-@media (max-width: 576px) {
-  .site-blocks-cover .single-text h1 {
-    font-size: 2rem !important;
-    line-height: 1.2 !important;
-    word-break: break-word !important;
-  }
-  .site-blocks-cover .single-text p {
-    font-size: 1rem !important;
-    line-height: 1.4 !important;
-  }
-  .site-blocks-cover .single-text .btn {
-    font-size: 14px !important;
-    padding: 12px 24px !important;
-  }
-}
-
-/* 2. FOOTER - More breathing room */
-@media (max-width: 768px) {
-  .site-footer {
-    padding: 2.5rem 0 !important;
-  }
-  .site-footer .container {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-  }
-  .site-footer .footer-heading {
-    margin-bottom: 1.25rem !important;
-    font-size: 15px !important;
-  }
-  .site-footer .footer-desc {
-    font-size: 13px !important;
-    line-height: 1.45 !important;
-  }
-  .site-footer ul li {
-    margin-bottom: 8px !important;
-  }
-  .site-footer p:not(.footer-heading) {
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-  }
-}
-
-/* 3. NEWSLETTER - Perfect mobile bar */
-@media (max-width: 576px) {
-  .footer-subscribe .input-group {
-    flex-direction: row !important;
-    max-width: 100% !important;
-  }
-  .footer-subscribe .form-control {
-    flex: 1 !important;
-    border-radius: 25px 0 0 25px !important;
-    height: 44px !important;
-    font-size: 14px !important;
-    padding: 0 16px !important;
-  }
-  .footer-subscribe .btn {
-    border-radius: 0 25px 25px 0 !important;
-    height: 44px !important;
-    min-width: 75px !important;
-    padding: 0 14px !important;
-    font-size: 13px !important;
-  }
-}
-
-/* 4. BOTTOM TEXT - Centered + Readable */
-@media (max-width: 768px) {
-  .site-footer .row.pt-5.mt-5 .col-md-12 p {
-    text-align: center !important;
-    font-size: 11px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 0.5rem !important;
-    padding: 0 0.5rem !important;
-  }
-  .site-footer .copyright {
-    font-size: 12px !important;
-  }
-  .site-footer .risks {
-    font-size: 11px !important;
-  }
-  .site-footer .designer {
-    font-size: 10px !important;
-  }
-}
-
-/* 5. GLOBAL MOBILE PADDING FIX */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  
-  /* Kill template's zero padding */
-  .site-section,
-  .site-footer {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  
-  /* Section spacing */
-  .site-section {
-    padding: 2.5rem 0 !important;
-  }
-}
-
-/* 6. LINKS - Better mobile tap targets */
-@media (max-width: 768px) {
-  .site-footer a {
-    display: inline-block !important;
-    padding: 4px 0 !important;
-    min-height: 36px !important;
-  }
-}
-
-/* 7. LOGO - Smaller mobile */
-@media (max-width: 576px) {
-  .footer-logo-img {
-    width: 120px !important;
-    height: auto !important;
-  }
+.footer-subscribe .btn:hover,
+.footer-subscribe .btn:focus,
+.footer-subscribe .btn:active {
+  border: 1px solid #fff;
 }
