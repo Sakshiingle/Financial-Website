@@ -2125,185 +2125,148 @@ figure figcaption {
     margin-top: 5px;
 }
 
-    /* ========================================
-   PERFECT FOOTER ALIGNMENT
-   ======================================== */
-
+    /* BASE (Mobile First - 320px+) */
 .site-footer {
-  background: #1a1a1a !important;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
   color: #fff !important;
-  padding: 2.5rem 0 !important;
+  padding: 1.5rem 1rem !important;
   font-size: 14px;
 }
 
-.site-footer .container {
-  max-width: 1200px !important;
+/* LOGO */
+.footer-logo { 
+  width: 120px !important; 
+  height: auto; 
 }
 
-/* Logo */
-.footer-logo {
-  width: 160px !important;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.footer-tagline {
-  color: #ddd !important;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Headings */
+/* HEADINGS */
 .footer-heading {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 600 !important;
   color: #fff !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 1.25rem;
-}
-
-/* Links */
-.site-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.site-footer ul li {
-  margin-bottom: 0.75rem;
-}
-
-.site-footer a {
-  color: #ddd !important;
-  text-decoration: none !important;
-  transition: 0.3s;
-}
-
-.site-footer a:hover {
-  color: #fff !important;
-}
-
-/* Contact */
-.contact-info p {
-  margin-bottom: 0.75rem;
-}
-
-.contact-info a {
-  display: flex;
-  align-items: center;
-}
-
-.contact-info .icon-phone,
-.contact-info .icon-envelope {
-  font-size: 16px;
-  margin-right: 10px;
-  color: #007bff;
-  width: 22px;
-}
-
-/* Newsletter */
-.newsletter-section {
-  margin-top: auto;
-}
-
-.newsletter-section p {
-  color: #ccc;
-  font-size: 14px;
   margin-bottom: 1rem;
 }
 
-.newsletter-form .input-group {
-  border-radius: 50px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+/* LINKS */
+.site-footer ul { padding: 0 !important; list-style: none; }
+.site-footer ul li { margin-bottom: 0.75rem; }
+.site-footer a { 
+  color: #ddd !important; 
+  text-decoration: none !important; 
+  display: block;
+  transition: all 0.3s ease;
+}
+.site-footer a:hover { 
+  color: #007bff !important; 
+  padding-left: 8px;
 }
 
+/* CONTACT */
+.contact-link {
+  display: flex !important;
+  align-items: center !important;
+  color: inherit !important;
+}
+.contact-link .icon-phone,
+.contact-link .icon-envelope {
+  font-size: 16px !important;
+  margin-right: 10px !important;
+  color: #007bff !important;
+  min-width: 22px;
+}
+
+/* NEWSLETTER */
+.newsletter-section p { 
+  color: #ccc !important; 
+  font-size: 13px !important; 
+  margin-bottom: 1rem; 
+}
+.newsletter-form .input-group { 
+  border-radius: 50px !important; 
+  overflow: hidden !important; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
 .newsletter-form .form-control {
   border: none !important;
-  height: 48px;
-  padding: 0 1.25rem;
-  background: #fff;
+  height: 45px !important;
   border-radius: 50px 0 0 50px !important;
+  background: #fff !important;
 }
-
 .newsletter-form .btn-newsletter {
   background: #007bff !important;
   border: none !important;
   color: #fff !important;
-  height: 48px;
-  padding: 0 1.5rem;
-  font-weight: 600;
+  height: 45px !important;
+  font-weight: 600 !important;
   border-radius: 0 50px 50px 0 !important;
-  min-width: 85px;
+  min-width: 80px !important;
 }
-
 .newsletter-form .btn-newsletter:hover {
   background: #0056b3 !important;
 }
 
-/* Divider */
+/* DIVIDER */
 .footer-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 2rem auto 1.5rem;
-  width: 90%;
-  max-width: 400px;
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent) !important;
 }
 
-/* Bottom */
-.footer-bottom {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.copyright {
-  font-size: 14px !important;
-  color: #ccc !important;
-  margin: 0 0 0.5rem 0;
-}
-
-.site-footer .small {
-  font-size: 12px !important;
-  color: #aaa !important;
-  margin: 0;
+/* COPYRIGHT */
+.copyright { font-size: 13px !important; color: #ccc !important; margin: 0; }
+.site-footer .small { 
+  font-size: 11px !important; 
+  color: #999 !important; 
 }
 
 /* ========================================
-   RESPONSIVE
+   BREAKPOINTS - ALL DEVICES (Mobile-First)
    ======================================== */
-@media (max-width: 768px){
-  .site-footer {
-    padding: 2rem 0 1.5rem !important;
-  }
-  
-  .site-footer .row > div {
-    margin-bottom: 2rem;
-    text-align: center !important;
-  }
-  
-  .newsletter-section {
-    margin-top: 0 !important;
-  }
-  
-  .footer-logo {
-    width: 140px !important;
-    margin: 0 auto 1rem;
-  }
-  
-  .newsletter-form .input-group {
-    max-width: 100% !important;
-    margin: 0 auto;
-  }
+
+/* Phones Portrait (320px - 575px) - 95% traffic */
+@media (min-width: 360px) {
+  .footer-logo { width: 130px !important; }
 }
 
-@media (max-width:768px) {
-  .footer-logo {
-    width: 120px !important;
-  }
-  
-  .newsletter-form .btn-newsletter {
-    min-width: 75px;
-  }
+/* Phones Landscape / Small Tablets (576px - 767px) */
+@media (min-width: 576px) {
+  .site-footer { padding: 2rem 1.25rem !important; }
+  .newsletter-form .input-group { max-width: 320px; margin: 0 auto; }
+  .newsletter-form .form-control,
+  .newsletter-form .btn-newsletter { height: 48px !important; }
+}
+
+/* Tablets Portrait (768px - 991px) */
+@media (min-width: 768px) {
+  .site-footer { padding: 2.5rem 1.5rem !important; }
+  .footer-heading { font-size: 16px !important; }
+  .footer-logo { width: 140px !important; }
+  .newsletter-section { text-align: right !important; }
+}
+
+/* Tablets Landscape / Small Laptops (992px - 1199px) */
+@media (min-width: 992px) {
+  .site-footer { padding: 3rem 2rem !important; }
+  .newsletter-form .input-group { max-width: none !important; margin: 0 !important; }
+}
+
+/* Desktops (1200px - 1399px) */
+@media (min-width: 1200px) {
+  .site-footer { padding: 3.5rem 2.5rem !important; }
+  .footer-logo { width: 160px !important; }
+}
+
+/* Large Desktops (1400px+) */
+@media (min-width: 1400px) {
+  .site-footer { padding: 4rem 3rem !important; }
+  .footer-heading { font-size: 17px !important; }
+  .newsletter-form .form-control,
+  .newsletter-form .btn-newsletter { height: 50px !important; }
+}
+
+/* Ultra-wide / 4K (1600px+) */
+@media (min-width: 1600px) {
+  .site-footer .container { max-width: 1400px !important; }
 }
