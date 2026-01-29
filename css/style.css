@@ -2273,7 +2273,7 @@ figure figcaption {
 /* ========================================
    RESPONSIVE
    ======================================== */
-@media (max-width: 991px) {
+@media (max-width: 768px){
   .site-footer {
     padding: 2rem 0 1.5rem !important;
   }
@@ -2298,7 +2298,7 @@ figure figcaption {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width:768px) {
   .footer-logo {
     width: 120px !important;
   }
