@@ -2125,148 +2125,148 @@ figure figcaption {
     margin-top: 5px;
 }
 
-    /* BASE (Mobile First - 320px+) */
-.site-footer {
+    .site-footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
   color: #fff !important;
-  padding: 1.5rem 1rem !important;
-  font-size: 14px;
+  padding: 2rem 1rem !important;
 }
 
 /* LOGO */
 .footer-logo { 
-  width: 120px !important; 
-  height: auto; 
+  width: 140px !important; 
+  height: auto !important;
+  max-width: 100% !important;
 }
 
-/* HEADINGS */
+/* TYPOGRAPHY */
 .footer-heading {
   font-size: 15px !important;
   font-weight: 600 !important;
   color: #fff !important;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 1rem;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.footer-tagline {
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+.footer-tagline small {
+  font-size: 12px !important;
 }
 
 /* LINKS */
-.site-footer ul { padding: 0 !important; list-style: none; }
-.site-footer ul li { margin-bottom: 0.75rem; }
+.site-footer ul { 
+  padding: 0 !important; 
+  margin: 0 !important; 
+  list-style: none !important; 
+}
+.site-footer ul li { 
+  margin-bottom: 0.75rem !important; 
+}
 .site-footer a { 
-  color: #ddd !important; 
-  text-decoration: none !important; 
-  display: block;
-  transition: all 0.3s ease;
+  color: #ccc !important; 
+  font-size: 14px !important;
+  text-decoration: none !important;
+  display: block !important;
+  transition: all 0.3s ease !important;
 }
 .site-footer a:hover { 
   color: #007bff !important; 
-  padding-left: 8px;
+  padding-left: 5px !important;
 }
 
 /* CONTACT */
 .contact-link {
-  display: flex !important;
-  align-items: center !important;
+  font-size: 14px !important;
+  padding: 0.5rem 0 !important;
   color: inherit !important;
 }
-.contact-link .icon-phone,
-.contact-link .icon-envelope {
+.contact-link i {
   font-size: 16px !important;
-  margin-right: 10px !important;
+  width: 24px !important;
   color: #007bff !important;
-  min-width: 22px;
-}
-
-/* NEWSLETTER */
-.newsletter-section p { 
-  color: #ccc !important; 
-  font-size: 13px !important; 
-  margin-bottom: 1rem; 
-}
-.newsletter-form .input-group { 
-  border-radius: 50px !important; 
-  overflow: hidden !important; 
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
-}
-.newsletter-form .form-control {
-  border: none !important;
-  height: 45px !important;
-  border-radius: 50px 0 0 50px !important;
-  background: #fff !important;
-}
-.newsletter-form .btn-newsletter {
-  background: #007bff !important;
-  border: none !important;
-  color: #fff !important;
-  height: 45px !important;
-  font-weight: 600 !important;
-  border-radius: 0 50px 50px 0 !important;
-  min-width: 80px !important;
-}
-.newsletter-form .btn-newsletter:hover {
-  background: #0056b3 !important;
+  flex-shrink: 0 !important;
 }
 
 /* DIVIDER */
 .footer-divider {
   border: none !important;
   height: 1px !important;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent) !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%) !important;
 }
 
 /* COPYRIGHT */
-.copyright { font-size: 13px !important; color: #ccc !important; margin: 0; }
+.copyright { 
+  font-size: 13px !important; 
+  margin: 0 !important; 
+}
 .site-footer .small { 
-  font-size: 11px !important; 
-  color: #999 !important; 
+  font-size: 12px !important; 
 }
 
 /* ========================================
-   BREAKPOINTS - ALL DEVICES (Mobile-First)
+   RESPONSIVE - ALL DEVICES (Centered)
    ======================================== */
 
-/* Phones Portrait (320px - 575px) - 95% traffic */
-@media (min-width: 360px) {
-  .footer-logo { width: 130px !important; }
+/* Extra Small Phones (320-575px) */
+@media (max-width: 575.98px) {
+  .site-footer {
+    padding: 1.5rem 0.75rem !important;
+  }
+  .footer-logo {
+    width: 120px !important;
+  }
+  .footer-heading {
+    font-size: 14px !important;
+  }
 }
 
-/* Phones Landscape / Small Tablets (576px - 767px) */
-@media (min-width: 576px) {
-  .site-footer { padding: 2rem 1.25rem !important; }
-  .newsletter-form .input-group { max-width: 320px; margin: 0 auto; }
-  .newsletter-form .form-control,
-  .newsletter-form .btn-newsletter { height: 48px !important; }
+/* Small Devices / Landscape Phones (576-767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .site-footer {
+    padding: 2rem 1rem !important;
+  }
+  .footer-logo {
+    width: 130px !important;
+  }
 }
 
-/* Tablets Portrait (768px - 991px) */
+/* Medium / Tablets (768-991px) */
 @media (min-width: 768px) {
-  .site-footer { padding: 2.5rem 1.5rem !important; }
-  .footer-heading { font-size: 16px !important; }
-  .footer-logo { width: 140px !important; }
-  .newsletter-section { text-align: right !important; }
+  .site-footer {
+    padding: 2.5rem 1.5rem !important;
+  }
+  .row {
+    align-items: center !important;
+  }
 }
 
-/* Tablets Landscape / Small Laptops (992px - 1199px) */
+/* Large / Desktop (992-1199px) */
 @media (min-width: 992px) {
-  .site-footer { padding: 3rem 2rem !important; }
-  .newsletter-form .input-group { max-width: none !important; margin: 0 !important; }
+  .site-footer {
+    padding: 3rem 2rem !important;
+  }
+  .footer-logo {
+    width: 150px !important;
+  }
 }
 
-/* Desktops (1200px - 1399px) */
+/* Extra Large Desktop (1200px+) */
 @media (min-width: 1200px) {
-  .site-footer { padding: 3.5rem 2.5rem !important; }
-  .footer-logo { width: 160px !important; }
+  .site-footer {
+    padding: 3.5rem 2.5rem !important;
+  }
+  .footer-heading {
+    font-size: 16px !important;
+  }
 }
 
-/* Large Desktops (1400px+) */
+/* XXL Screens (1400px+) */
 @media (min-width: 1400px) {
-  .site-footer { padding: 4rem 3rem !important; }
-  .footer-heading { font-size: 17px !important; }
-  .newsletter-form .form-control,
-  .newsletter-form .btn-newsletter { height: 50px !important; }
-}
-
-/* Ultra-wide / 4K (1600px+) */
-@media (min-width: 1600px) {
-  .site-footer .container { max-width: 1400px !important; }
+  .site-footer .container {
+    max-width: 1200px !important;
+  }
 }
