@@ -2125,76 +2125,87 @@ figure figcaption {
     margin-top: 5px;
 }
 
-   .site-footer {
+  /* ========================================
+   FOOTER - COMPLETE CSS (Template + Custom Design)
+   ======================================== */
+
+/* Base Footer Styles */
+.site-footer {
   padding: 4em 0;
   background: #343a40;
 }
+
 @media (min-width: 768px) {
   .site-footer {
     padding: 8em 0;
   }
 }
+
 .site-footer .border-top {
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
+
 .site-footer p {
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255, 0.8);
 }
-.site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+
+.site-footer h2, 
+.site-footer h3, 
+.site-footer h4, 
+.site-footer h5 {
   color: #fff;
 }
+
 .site-footer a {
-  color: rgba(255, 255, 255);
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s all ease;
 }
+
 .site-footer a:hover {
-  color: white;
+  color: #fff;
+  padding-left: 5px;
 }
+
 .site-footer ul li {
   margin-bottom: 10px;
 }
+
 .site-footer .footer-heading {
   font-size: 16px;
   color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
+/* Footer Logo */
+.footer-logo-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Footer Social Links */
 .footer-social a {
   text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.footer-subscribe .form-control {
-  border-color: #fff !important;
-}
-.footer-subscribe .form-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 200;
-  font-style: italic;
-}
-.footer-subscribe .form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 200;
-  font-style: italic;
-}
-.footer-subscribe .form-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 200;
-  font-style: italic;
-}
-.footer-subscribe .form-control:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 200;
-  font-style: italic;
+.footer-social a:hover {
+  padding-left: 5px;
 }
 
-.footer-subscribe .btn {
-  height: 43px;
-  line-height: 1;
-  border: 1px solid #fff;
-  background: #fff !important;
-  color: #000 !important;
+/* Contact Info Icons */
+.contact-info .icon-phone,
+.contact-info .icon-envelope {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #007bff;
 }
-.footer-subscribe .btn:hover,
-.footer-subscribe .btn:focus,
-.footer-subscribe .btn:active {
-  border: 1px solid #fff;
-}
+
+/* Newsletter Form */
+.footer-subscribe .form-con
