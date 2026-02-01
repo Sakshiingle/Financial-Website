@@ -2016,6 +2016,7 @@ figure figcaption {
     margin-left: 10px;
 }
 
+
   /* Navbar container */
   .site-navbar {
     position: fixed;
@@ -2077,6 +2078,8 @@ figure figcaption {
     color: #007bff !important;
   }
 }
+
+
   /* ===============================
    MOBILE MENU FIX (CLOSE ICON)
 ================================ */
