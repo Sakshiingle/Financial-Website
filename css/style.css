@@ -493,7 +493,7 @@ body:after {
     transition: .3s all ease; }
   .sticky-wrapper .site-navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    .sticky-wrapper .site-navbar .site-menu-toggle {
+    .sticky-wrapper .site-navbar .site-menu-toggle  {
       color: #ffffff; }
     .sticky-wrapper .site-navbar .site-logo a {
       color: #ffffff; }
@@ -502,12 +502,13 @@ body:after {
       .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
         color: #fff !important; }
   .sticky-wrapper.is-sticky .site-navbar {
+    
     background: #ffffff !important;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
-      color: #000; }
+      color: #007bff !important; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
       color: #007bff; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
@@ -1948,137 +1949,7 @@ figure figcaption {
       color: #000;
     }
 
-    /* ===============================
-         MOBILE HEADER FIX
-   =============================== */
-
-@media (max-width: 768px) {
-
-  /* Navbar container */
-  .site-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #00000097;
-    z-index: 3000;
-  }
-
-  /* Flex layout for header */
-  .site-navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  /* Menu icon LEFT */
-  .site-menu-toggle {
-    order: 1;
-    font-size: 28px;
-    color: #fff !important;
-  }
-
-  /* Logo RIGHT */
-  .site-logo {
-    order: 2;
-    margin-left: auto;
-  }
-
-  .site-logo a {
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff !important;
-  }
-
-  /* Sticky state after scroll */
-  .sticky-wrapper.is-sticky .site-navbar {
-    background: #ffffff !important;
-  }
-
-  .sticky-wrapper.is-sticky .site-logo a {
-    color: #007bff !important;
-  }
-
-  .sticky-wrapper.is-sticky .site-menu-toggle {
-    color: #007bff !important;
-  }
-}
-
- /* ===============================
-   MOBILE HEADER ALIGNMENT FIX
-   =============================== */
-@media (max-width: 768px) {
-
-  .header-logo-img {
-    height: 10px;       
-    width: 10px;        
-    display: inline-block; 
-    margin-left: 10px;
-}
-
-
-  /* Navbar container */
-  .site-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.85);
-    z-index: 3000;
-  }
-
-  /* Force row to behave like flex */
-  .site-navbar .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  /* Hamburger LEFT */
-  .site-menu-toggle {
-    order: 1;
-    font-size: 24px;
-    color: #fff;
-    align-self: start;
-   
-  }
-
-  /* Logo RIGHT */
-  .site-logo {
-    order: 2;
-    text-align: center;
-    align-self: center;
-  }
-
-  .site-logo a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff !important;
-    align-self: center;
-  }
-
-  /* Prevent Bootstrap stacking */
-  .site-navbar .col-12,
-  .site-navbar .col-6 {
-    flex: 0 0 auto;
-    width: auto;
-  }
-
-  /* Sticky state (after scroll) */
-  .sticky-wrapper.is-sticky .site-navbar {
-    background: #ffffff;
-  }
-
-  .sticky-wrapper.is-sticky .site-logo a {
-    color: #007bff !important;
-  }
-
-  .sticky-wrapper.is-sticky .site-menu-toggle {
-    color: #007bff !important;
-  }
-}
-
+  
 
   /* ===============================
    MOBILE MENU FIX (CLOSE ICON)
@@ -2105,18 +1976,8 @@ figure figcaption {
   color: #000;
   font-size: 32px;
 }
-  /* ===============================
-   HERO OFFSET FOR FIXED HEADER
-================================ */
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 70px;
-  }
   
-}
 
- 
   /* ===============================
      --- CUSTOM HEADER FIXES --- 
   ================================ */
@@ -2127,6 +1988,10 @@ figure figcaption {
     display: inline-block; /* Makes it sit on the same line as the text */
     margin-top: 5px;
 }
+
+/* ===============================
+     --- CUSTOM Footer FIXES --- 
+  ================================ */
 
     .site-footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
@@ -2210,66 +2075,115 @@ figure figcaption {
   font-size: 12px !important; 
 }
 
-/* ========================================
-   RESPONSIVE - ALL DEVICES (Centered)
-   ======================================== */
 
-/* Extra Small Phones (320-575px) */
-@media (max-width: 575.98px) {
-  .site-footer {
-    padding: 1.5rem 0.75rem !important;
-  }
-  .footer-logo {
-    width: 120px !important;
-  }
+/* ==============================================
+   FOOTER BASE STYLES 
+   ============================================== */
+.site-footer {
+  padding: 2rem 1rem !important;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+  color: #fff !important;
+}
+
+/* --- FIX: REDUCED LINE HEIGHT FOR LINKS --- */
+.site-footer .quick-links-list li {
+  margin-bottom: 2px !important; /* Very small space between items */
+  line-height: 1.2 !important;   /* Tighter text height */
+  padding: 0 !important;
+}
+.site-footer .quick-links-list li a {
+  font-size: 14px !important;
+  display: inline-block !important; 
+  padding: 2px 0 !important;
+  color: #ccc !important;
+  text-decoration: none;
+}
+.site-footer .quick-links-list li a:hover {
+  color: #007bff !important;
+  padding-left: 5px !important;
+}
+
+/* --- FIX: COPYRIGHT SINGLE LINE --- */
+.copyright {
+  font-size: 11px !important; /* Slightly smaller to fit more text on one line */
+  line-height: 1.5 !important;
+  display: inline-block; /* Helps keep flow */
+  width: 100%;
+}
+
+/* ==============================================
+   MOBILE LAYOUT (Max-width 767px)
+   ============================================== */
+@media (max-width: 767.98px) {
+  .site-footer { text-align: left; }
+
+  /* Logo */
+  .footer-logo { width: 100px !important; margin-bottom: 8px !important; }
+  
+  /* Quick Links Position */
+  .mobile-links-wrapper { padding-left: 10px; }
+  
+  /* Headings */
   .footer-heading {
     font-size: 14px !important;
+    text-transform: uppercase;
+    margin-bottom: 5px !important; /* Reduced space below heading */
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+
+  /* Contact Box (Bottom Center) */
+  .mobile-contact-box {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-contact-box .footer-heading {
+    display: block;
+    border: none;
+    margin-bottom: 5px !important;
+  }
+
+  /* Contact Buttons */
+  .contact-link {
+    display: inline-block;
+    background: rgba(255,255,255,0.05);
+    padding: 6px 15px !important;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    font-size: 13px !important;
+    width: 100%;
+    color: #fff !important;
   }
 }
 
-/* Small Devices / Landscape Phones (576-767px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .site-footer {
-    padding: 2rem 1rem !important;
-  }
-  .footer-logo {
-    width: 130px !important;
-  }
-}
-
-/* Medium / Tablets (768-991px) */
+/* ==============================================
+   DESKTOP LAYOUT RESTORATION FOOTER
+   ============================================== */
 @media (min-width: 768px) {
-  .site-footer {
-    padding: 2.5rem 1.5rem !important;
-  }
-  .row {
-    align-items: center !important;
-  }
-}
-
-/* Large / Desktop (992-1199px) */
-@media (min-width: 992px) {
-  .site-footer {
-    padding: 3rem 2rem !important;
-  }
-  .footer-logo {
-    width: 150px !important;
-  }
-}
-
-/* Extra Large Desktop (1200px+) */
-@media (min-width: 1200px) {
-  .site-footer {
-    padding: 3.5rem 2.5rem !important;
-  }
+  .footer-logo { width: 140px !important; }
+  
   .footer-heading {
     font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+    border: none !important;
   }
-}
-
-/* XXL Screens (1400px+) */
-@media (min-width: 1400px) {
-  .site-footer .container {
-    max-width: 1200px !important;
+  
+  .contact-link {
+    background: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center;
+    color: #ccc !important;
   }
+  
+  .mobile-links-wrapper { padding-left: 0; }
 }
